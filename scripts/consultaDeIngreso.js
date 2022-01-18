@@ -101,6 +101,8 @@ function calcularDepocito(propiedad) {
     document.getElementById("duracion").value = "";
     document.getElementById("aumento").value = "";
     document.getElementById("tiempoAumento").value = "";
+    document.getElementById("direccionAAbuscar").value = propiedad.direccion;
+    mostrarDatosPropiedad();
 }
 
 // Funcion para almacenar la propiedad en un Array de propiedades.
