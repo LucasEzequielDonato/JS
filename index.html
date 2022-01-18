@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Enlozo el archivo al archivo CSS -->
+    <link rel="shortcut icon" href="./multimedia/general/logo.webp" type="image/x-icon">
+    <!-- Icono de la pagina -->
+    <title>Cotizador de alquileres</title>
+</head>
+<body>
+    <section class="seccion">
+        <div class="contenedorSeccion">
+            <div>
+                <p class="tituloApp centrarTexto">Calcular costo de ingreso de alquileres</p>
+                <div>
+                    <p class="parrafoDatos centrarTexto">DIRECCION</p>
+                    <input class="bloque centrar entrada" type="text" id="direccion" required="true" placeholder="Ingresa direccion de la propiedad">
+                    <p class="parrafoDatos centrarTexto">MONTO INICIAL</p>
+                    <input class="bloque centrar entrada" type="number" id="alquiler" required="true" placeholder="Ingresa el monto inicial de alquiler">
+                    <p class="parrafoDatos centrarTexto">DURACION</p>
+                    <input class="bloque centrar entrada" type="number" id="duracion" required="true" placeholder="Ingresa cantidad de años de durecion">
+                    <p class="parrafoDatos centrarTexto">AUMENTO</p>
+                    <input class="bloque centrar entrada" type="number" step="any" id="aumento" required="true" placeholder="Ingresa cantidad de aumento">
+                    <p class="parrafoDatos centrarTexto">PERIODO</p>
+                    <input class="bloque centrar entrada" type="number" id="tiempoAumento" required="true" placeholder="Ingresa la cantidad de meses de los periodos">
+                    <button type="button" class="botonCalcular bloque centrar" id="botonCalcular">Calcular</button>
+                    <p class="parrafoDatos centrarTexto">DIRECCION</p>
+                    <input class="bloque centrar entrada" type="text" id="direccionAAbuscar" required="true" placeholder="Ingresa la direccion de la propiedad a buscar">
+                    <button type="button" class="botonCalcular bloque centrar" id="botonMostrar"">Mostrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seccion popup" id="popup">
+        <div class="contenedorPopup" id="contenedorPopup">
+            <button type="button" id="botonCerrar">
+                <img src="./multimedia/general/close-outline.svg" alt="Icono de cerrado" class="iconoCerrado">
+            </button>
+            <p class="centrarTexto" id="tituloPopup">DATOS DE LA PROPIEDAD</p>
+            <div>
+                <p id="parrafoInformacion"></p>
+            </div>
+        </div>
+    </section>
+    <!-- Llamo al script -->
+    <script src="./scripts/consultaDeIngreso.js"></script>
+</body>
+</html>

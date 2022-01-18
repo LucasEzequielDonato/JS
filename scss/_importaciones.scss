@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+/* Importo la fuente principal */
+@import "base/global";
+@import "componentes/body";
+@import "componentes/contenedores.scss";
+@import "secciones/index";
+@import "secciones/popup";
+@import "base/mediaQuery";

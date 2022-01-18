@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+/* Importo la fuente principal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Quito todo lo pre definido y defino la fuente de letra principal */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../multimedia/general/Fondo.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+/* Defino el fondo */
+.seccion {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contenedorSeccion {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+}
+.contenedorSeccion div {
+  width: 100%;
+  position: relative;
+}
+
+.popup {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s;
+  top: 0;
+}
+
+/* Inicia main index */
+/* Inicia multimedia */
+/* Finaliza multimedia */
+/* Inicia seccion 1*/
+.centrarTexto {
+  display: block;
+  text-align: center;
+}
+
+.centrar {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bloque {
+  display: block;
+}
+
+.entrada {
+  width: 300px;
+  height: 40px;
+}
+
+.tituloApp {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  top: -64px;
+}
+
+.parrafoDatos {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.botonCalcular {
+  width: 180px;
+  height: 50px;
+  margin: 20px auto;
+  font-size: 30px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 1px 0px 10px black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.botonCalcular:active {
+  color: white;
+  background-color: black;
+  border: 1px solid red;
+}
+
+/* Finaliza seccion 1 */
+/* Finaliza main index */
+.contenedorPopup {
+  background-color: #c8c8c8;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  top: -100%;
+  transition: all 0.5s;
+}
+
+#botonCerrar {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  filter: invert(0);
+}
+#botonCerrar:active {
+  filter: invert(1);
+}
+
+.iconoCerrado {
+  width: 100%;
+  height: 100%;
+}
+
+#tituloPopup {
+  color: red;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+#parrafoInformacion {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  line-height: 35px;
+}
+
+/* Inicia media querys */
+/* Finaliza media querys */
+
+/*# sourceMappingURL=style.css.map */
