@@ -29,16 +29,6 @@ class Propiedad {
 
 }
 
-//Se verifica si existe o no alguna carga previa de propiedades.
-const localStorageProperties = localStorage.getItem("propiedades");
-const propiedades = localStorageProperties ? JSON.parse(localStorageProperties) : [];
-const botonCalcular = document.getElementById("botonCalcular");
-const botonMostrar = document.getElementById("botonMostrar");
-const botonCerrar = document.getElementById("botonCerrar");
-botonCalcular.addEventListener("click", datosFaltantesGestion);
-botonMostrar.addEventListener("click", mostrarDatosPropiedad);
-botonCerrar.addEventListener("click", cerrarPopup);
-
 // Funcion de ingreso de datos faltantes para realizar el calculo de ingreso.
 function datosFaltantesGestion() {
     const direccion = document.getElementById("direccion").value;
@@ -160,3 +150,13 @@ function mostrarPopup(){
     popup.style.opacity = "1";
     popup.style.zIndex = "100";
 }
+
+//Se verifica si existe o no alguna carga previa de propiedades.
+const localStorageProperties = localStorage.getItem("propiedades");
+const propiedades = localStorageProperties ? JSON.parse(localStorageProperties) : [];
+const botonCalcular = document.getElementById("botonCalcular");
+const botonMostrar = document.getElementById("botonMostrar");
+const botonCerrar = document.getElementById("botonCerrar");
+botonCalcular.addEventListener("click", datosFaltantesGestion);
+botonMostrar.addEventListener("click", mostrarDatosPropiedad);
+botonCerrar.addEventListener("click", cerrarPopup);
